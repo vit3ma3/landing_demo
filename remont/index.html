@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мастер Дом — ремонт квартир под ключ в Москве</title>
+  <meta name="description" content="Косметический и капитальный ремонт квартир, ванные под ключ, электрика и сантехника. Бесплатный замер, гарантия 2 года, оплата по этапам.">
+  <meta name="theme-color" content="#1f2328">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Мастер Дом">
+  <meta property="og:title" content="Мастер Дом — ремонт квартир с фиксированной сметой">
+  <meta property="og:description" content="Посчитайте примерную стоимость ремонта онлайн. Бесплатный выезд замерщика, гарантия 2 года, оплата по этапам.">
+  <meta property="og:url" content="https://vit3ma3.github.io/landing_demo/remont/">
+  <meta property="og:image" content="https://vit3ma3.github.io/landing_demo/remont/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Пн–Сб, 9:00–20:00</span>
+      <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Мастер Дом — наверх">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#house"/></svg>
+        <span>Мастер<b>Дом</b></span>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#steps">Этапы</a>
+        <a href="#works">Работы</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#order" class="nav__cta">Оставить заявку</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="label">Ремонт квартир в Москве</p>
+          <h1 class="hero__title">Ремонт под ключ <span>со сметой,</span> которая не растёт</h1>
+          <p class="hero__lead">Фиксируем цену в договоре до начала работ. Платите по этапам — только за принятую работу. Прораб каждый день присылает фотоотчёт.</p>
+          <div class="hero__actions">
+            <a href="#order" class="btn btn--accent">Вызвать замерщика бесплатно</a>
+            <a href="https://t.me/application_intake_demo_bot" class="btn btn--tg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tg"/></svg>
+              Написать в Telegram-бот
+            </a>
+          </div>
+          <ul class="stats">
+            <li><b>2 года</b><span>гарантия по договору</span></li>
+            <li><b>0 ₽</b><span>выезд и замер</span></li>
+            <li><b>5 этапов</b><span>оплата по факту</span></li>
+          </ul>
+        </div>
+
+        <form class="calc" id="calc" aria-labelledby="calc-title">
+          <h2 class="calc__title" id="calc-title">Калькулятор стоимости</h2>
+          <div class="calc__row">
+            <label for="area">Площадь квартиры</label>
+            <div class="calc__area">
+              <input type="range" id="area-range" min="15" max="200" step="1" value="58" aria-label="Площадь, ползунок">
+              <div class="calc__num"><input type="number" id="area" min="15" max="200" value="58" inputmode="numeric"><span>м²</span></div>
+            </div>
+          </div>
+          <fieldset class="calc__row">
+            <legend>Тип ремонта</legend>
+            <div class="calc__types">
+              <label class="type"><input type="radio" name="kind" value="3500" data-days="0.35" data-work="Косметический ремонт" checked><span><b>Косметический</b>от 3 500 ₽/м²</span></label>
+              <label class="type"><input type="radio" name="kind" value="7000" data-days="0.9" data-work="Капитальный ремонт"><span><b>Капитальный</b>от 7 000 ₽/м²</span></label>
+              <label class="type"><input type="radio" name="kind" value="11000" data-days="1.3" data-work="Капитальный ремонт"><span><b>Дизайнерский</b>от 11 000 ₽/м²</span></label>
+            </div>
+          </fieldset>
+          <div class="calc__result" aria-live="polite">
+            <p class="calc__caption">Примерная стоимость работ</p>
+            <p class="calc__sum" id="calc-sum">203 000 ₽</p>
+            <p class="calc__days" id="calc-days">≈ 21 день</p>
+          </div>
+          <a href="#order" class="btn btn--dark calc__btn" id="calc-order">Зафиксировать цену на замере</a>
+          <p class="calc__note">Без учёта материалов. Точную смету составим после бесплатного замера.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="label">Прайс</p>
+          <h2 class="section__title">Услуги и цены</h2>
+        </div>
+        <table class="price">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Косметический ремонт</td><td>от 3 500 ₽/м²</td></tr>
+            <tr><td>Капитальный ремонт</td><td>от 7 000 ₽/м²</td></tr>
+            <tr><td>Ремонт ванной под ключ</td><td>от 120 000 ₽</td></tr>
+            <tr><td>Электромонтаж</td><td>от 1 200 ₽/точка</td></tr>
+            <tr><td>Сантехнические работы</td><td>от 1 500 ₽</td></tr>
+            <tr><td>Поклейка обоев</td><td>от 350 ₽/м²</td></tr>
+            <tr><td>Укладка ламината</td><td>от 450 ₽/м²</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Точную стоимость назовём после бесплатного выезда замерщика.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="steps">
+      <div class="container">
+        <div class="section__head">
+          <p class="label">Как работаем</p>
+          <h2 class="section__title">Этапы работ</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Заявка и замер</h3>
+            <p>Замерщик приезжает в удобное время, обсуждает задачу, делает обмеры. Бесплатно.</p>
+            <span class="step__time">1 день</span>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Смета и договор</h3>
+            <p>Готовим смету по позициям и фиксируем цену и сроки в договоре.</p>
+            <span class="step__time">2–3 дня</span>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Черновые работы</h3>
+            <p>Демонтаж, электрика, сантехника, стяжка и выравнивание стен.</p>
+            <span class="step__time">от 2 недель</span>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Чистовая отделка</h3>
+            <p>Плитка, полы, покраска, двери. Каждый день — фотоотчёт от прораба.</p>
+            <span class="step__time">от 2 недель</span>
+          </li>
+          <li class="step">
+            <span class="step__num">05</span>
+            <h3>Приёмка и гарантия</h3>
+            <p>Принимаете по чек-листу, убираем мусор, выдаём гарантию на 2 года.</p>
+            <span class="step__time">1 день</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section__head">
+          <p class="label">Портфолио</p>
+          <h2 class="section__title">До и после</h2>
+          <p class="section__lead">Потяните ползунок, чтобы сравнить.</p>
+        </div>
+        <div class="works">
+          <figure class="ba">
+            <div class="ba__frame" style="--pos: 50%">
+              <div class="ba__img ba__img--after ba--flat" aria-hidden="true"></div>
+              <div class="ba__img ba__img--before" aria-hidden="true"></div>
+              <span class="ba__tag ba__tag--before">До</span>
+              <span class="ba__tag ba__tag--after">После</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: двушка в новостройке">
+            </div>
+            <figcaption><b>Двушка в новостройке, 58 м²</b>Капитальный ремонт под ключ за 2,5 месяца.</figcaption>
+          </figure>
+          <figure class="ba">
+            <div class="ba__frame" style="--pos: 50%">
+              <div class="ba__img ba__img--after ba--bath" aria-hidden="true"></div>
+              <div class="ba__img ba__img--before" aria-hidden="true"></div>
+              <span class="ba__tag ba__tag--before">До</span>
+              <span class="ba__tag ba__tag--after">После</span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: ванная комната">
+            </div>
+            <figcaption><b>Ванная комната, 4 м²</b>Полная замена плитки и сантехники, скрытый монтаж за 12 дней.</figcaption>
+          </figure>
+        </div>
+        <p class="note">Изображения — заглушки, нарисованы на CSS.</p>
+      </div>
+    </section>
+
+    <section class="section section--gray" id="order">
+      <div class="container order">
+        <div class="order__text">
+          <p class="label">Заявка</p>
+          <h2 class="section__title">Вызвать замерщика</h2>
+          <p class="section__lead">Перезвоним в выбранное время, согласуем день замера. Удобнее в мессенджере — напишите боту, он задаст те же вопросы.</p>
+          <a href="https://t.me/application_intake_demo_bot" class="btn btn--tg" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#tg"/></svg>
+            Написать в Telegram-бот
+          </a>
+        </div>
+        <form class="form" id="form" novalidate>
+          <div class="field">
+            <label for="f-name">Имя</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" required>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-work">Вид работ</label>
+            <select id="f-work" name="work" required>
+              <option value="">Выберите</option>
+              <option>Косметический ремонт</option>
+              <option>Капитальный ремонт</option>
+              <option>Ванная / санузел</option>
+              <option>Электрика</option>
+              <option>Сантехника</option>
+              <option>Другое</option>
+            </select>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-time">Когда удобно позвонить</label>
+            <select id="f-time" name="time">
+              <option>В любое время</option>
+              <option>Утром (9–12)</option>
+              <option>Днём (12–17)</option>
+              <option>Вечером (17–20)</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="f-desc">Описание задачи <span class="field__count" id="f-count">0 / 1000</span></label>
+            <textarea id="f-desc" name="desc" rows="4" maxlength="1000" placeholder="Например: двушка 58 м², новостройка, нужен ремонт под ключ"></textarea>
+          </div>
+          <label class="check field--full">
+            <input type="checkbox" name="agree" required>
+            <span>Согласен на обработку персональных данных</span>
+          </label>
+          <p class="field__error field--full" id="agree-error" aria-live="polite"></p>
+          <button type="submit" class="btn btn--accent field--full">Отправить заявку</button>
+          <div class="form__success field--full" role="status" hidden>
+            <b>Заявка отправлена</b>
+            <p>Мы свяжемся с вами в выбранное время. <small>Это демо: заявка никуда не отправляется.</small></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <p class="label">FAQ</p>
+          <h2 class="section__title">Частые вопросы</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Выезд замерщика платный?</summary>
+            <div class="faq__body"><p>Нет, выезд и замер бесплатные в пределах города.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Даёте ли гарантию?</summary>
+            <div class="faq__body"><p>Да, гарантия на все работы — 2 года, фиксируем в договоре.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Кто закупает материалы?</summary>
+            <div class="faq__body"><p>Можем закупить сами со скидкой поставщика или работать с вашими материалами.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Как происходит оплата?</summary>
+            <div class="faq__body"><p>Поэтапно: оплачиваете только выполненный и принятый этап работ.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли следить за ходом ремонта?</summary>
+            <div class="faq__body"><p>Да, прораб присылает фотоотчёт в мессенджер каждый день.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="contacts">
+      <div class="container contacts">
+        <div>
+          <p class="label">Контакты</p>
+          <h2 class="section__title">Мастер Дом</h2>
+        </div>
+        <dl class="contacts__list">
+          <div><dt>Офис</dt><dd>г. Москва, ул. Примерная, д. 1, офис 10</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79000000000">+7 (900) 000-00-00</a></dd></div>
+          <div><dt>Часы работы</dt><dd>Пн–Сб, 9:00–20:00</dd></div>
+          <div><dt>Почта</dt><dd>info@masterdom.example</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Мастер Дом</p>
+      <p>Демо-сайт, компания вымышленная.</p>
+    </div>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="house" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="4" fill="#f26b1d"/>
+      <path d="M7 16 16 8l9 8M10 14v10h12V14" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M14 24v-5h4v5" fill="none" stroke="#fff" stroke-width="2.4"/>
+    </symbol>
+    <symbol id="tg" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2 1.8 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/>
+    </symbol>
+  </svg>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

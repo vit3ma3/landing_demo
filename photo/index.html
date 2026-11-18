@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Илья Морозов — портретная, свадебная и семейная фотосъёмка</title>
+  <meta name="description" content="Фотограф в Санкт-Петербурге: портреты, свадьбы, семейные и love story съёмки. Пакеты от 7 000 ₽, готовые фото через 7 дней.">
+  <meta name="theme-color" content="#0e0e0f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Илья Морозов, фотосъёмка">
+  <meta property="og:title" content="Илья Морозов — фотографии, в которых вы узнаёте себя">
+  <meta property="og:description" content="Портреты, свадьбы и семейные истории. Пакеты съёмки от 7 000 ₽, Санкт-Петербург и выезд.">
+  <meta property="og:url" content="https://vit3ma3.github.io/landing_demo/photo/">
+  <meta property="og:image" content="https://vit3ma3.github.io/landing_demo/photo/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="#top" class="logo" aria-label="Илья Морозов — наверх">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span>Илья Морозов</span>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#works">Работы</a>
+        <a href="#packages">Пакеты</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact" class="nav__cta">Обсудить съёмку</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero__mosaic" aria-hidden="true">
+        <div class="frame g1"></div>
+        <div class="frame g2"></div>
+        <div class="frame g3"></div>
+        <div class="frame g4"></div>
+        <div class="frame g5"></div>
+        <div class="frame g6"></div>
+        <div class="frame g7"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__kicker">Фотограф · Санкт-Петербург</p>
+        <h1 class="hero__title">Илья<br><em>Морозов</em></h1>
+        <p class="hero__lead">Снимаю людей так, чтобы через десять лет хотелось пересматривать. Портреты, свадьбы, семейные истории.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--light">Обсудить съёмку</a>
+          <a href="#works" class="btn btn--line">Смотреть работы</a>
+        </div>
+      </div>
+      <p class="hero__counter" aria-hidden="true"><span>01</span> / 07</p>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Работы</h2>
+          <div class="filters" role="group" aria-label="Фильтр работ">
+            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Все</button>
+            <button type="button" class="filter" data-filter="portrait" aria-pressed="false">Портрет</button>
+            <button type="button" class="filter" data-filter="wedding" aria-pressed="false">Свадьба</button>
+            <button type="button" class="filter" data-filter="family" aria-pressed="false">Семья</button>
+          </div>
+        </div>
+        <ul class="gallery">
+          <li class="shot shot--tall" data-cat="portrait"><button type="button" class="shot__btn g2" aria-label="Открыть: портрет в студии"><span class="shot__cap">Портрет в студии</span></button></li>
+          <li class="shot" data-cat="wedding"><button type="button" class="shot__btn g4" aria-label="Открыть: свадьба на заливе"><span class="shot__cap">Свадьба на заливе</span></button></li>
+          <li class="shot" data-cat="family"><button type="button" class="shot__btn g6" aria-label="Открыть: семья на даче"><span class="shot__cap">Семья на даче</span></button></li>
+          <li class="shot shot--wide" data-cat="wedding"><button type="button" class="shot__btn g1" aria-label="Открыть: первый танец"><span class="shot__cap">Первый танец</span></button></li>
+          <li class="shot" data-cat="portrait"><button type="button" class="shot__btn g8" aria-label="Открыть: портрет у окна"><span class="shot__cap">Портрет у окна</span></button></li>
+          <li class="shot shot--tall" data-cat="family"><button type="button" class="shot__btn g5" aria-label="Открыть: утро с малышом"><span class="shot__cap">Утро с малышом</span></button></li>
+          <li class="shot" data-cat="portrait"><button type="button" class="shot__btn g3" aria-label="Открыть: деловой портрет"><span class="shot__cap">Деловой портрет</span></button></li>
+          <li class="shot" data-cat="wedding"><button type="button" class="shot__btn g7" aria-label="Открыть: сборы невесты"><span class="shot__cap">Сборы невесты</span></button></li>
+          <li class="shot shot--wide" data-cat="family"><button type="button" class="shot__btn g9" aria-label="Открыть: прогулка в парке"><span class="shot__cap">Прогулка в парке</span></button></li>
+        </ul>
+        <p class="note">Вместо фотографий — градиентные заглушки.</p>
+      </div>
+    </section>
+
+    <section class="section section--line" id="packages">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Пакеты съёмки</h2>
+          <p class="section__lead">Цена фиксированная, без доплат за выезд по городу.</p>
+        </div>
+        <ol class="packages">
+          <li class="pack">
+            <p class="pack__num">I</p>
+            <h3 class="pack__name">Портрет</h3>
+            <p class="pack__price">7 000 ₽</p>
+            <ul class="pack__list">
+              <li>1 час съёмки</li>
+              <li>1 локация или студия</li>
+              <li>20 фото в ретуши</li>
+              <li>Готово через 5 дней</li>
+            </ul>
+          </li>
+          <li class="pack pack--featured">
+            <p class="pack__num">II</p>
+            <h3 class="pack__name">Семейная история</h3>
+            <p class="pack__price">14 000 ₽</p>
+            <ul class="pack__list">
+              <li>2 часа съёмки</li>
+              <li>Дом и прогулка</li>
+              <li>60 фото в цвете и ч/б</li>
+              <li>Онлайн-галерея на год</li>
+            </ul>
+            <span class="pack__tag">чаще всего выбирают</span>
+          </li>
+          <li class="pack">
+            <p class="pack__num">III</p>
+            <h3 class="pack__name">Свадебный день</h3>
+            <p class="pack__price">от 45 000 ₽</p>
+            <ul class="pack__list">
+              <li>8 часов — от сборов до танца</li>
+              <li>300+ фото, 40 в детальной ретуши</li>
+              <li>Превью через 3 дня</li>
+              <li>Фотокнига 30×30 в подарок</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Отзывы</h2>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>«Ни разу не почувствовали себя „моделями“. Илья просто гулял с нами, а потом прислал фото, где мы настоящие».</blockquote>
+            <figcaption><b>Мария и Антон</b><span>пример отзыва</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>«Нужен был портрет для сайта — сделали за час, без мучений и десяти переодеваний. Коллеги спрашивают контакт».</blockquote>
+            <figcaption><b>Сергей</b><span>пример отзыва</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>«Превью свадьбы пришло через два дня. Мы смотрели его на кухне и плакали. В хорошем смысле».</blockquote>
+            <figcaption><b>Екатерина</b><span>пример отзыва</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--line" id="contact">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 class="section__title">Обсудить <em>съёмку</em></h2>
+          <p class="section__lead">Расскажите, что хотите снять, — отвечу в течение дня, предложу локации и время.</p>
+          <dl class="contact__info">
+            <div><dt>Почта</dt><dd>hello@morozov-photo.example</dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+79000000000">+7 900 000-00-00</a></dd></div>
+          </dl>
+        </div>
+        <form class="form" id="form" novalidate>
+          <div class="field">
+            <label for="f-name">Имя</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2">
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-contact">Телефон или Telegram</label>
+            <input id="f-contact" name="contact" type="text" autocomplete="tel" required placeholder="+7… или @username">
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-type">Тип съёмки</label>
+            <select id="f-type" name="type" required>
+              <option value="">Выберите</option>
+              <option>Портрет</option>
+              <option>Семейная</option>
+              <option>Свадьба</option>
+              <option>Другое</option>
+            </select>
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-date">Желаемая дата</label>
+            <input id="f-date" name="date" type="date">
+            <p class="field__error" aria-live="polite"></p>
+          </div>
+          <div class="field field--full">
+            <label for="f-msg">Пара слов об идее</label>
+            <textarea id="f-msg" name="message" rows="4" maxlength="1000"></textarea>
+          </div>
+          <button type="submit" class="btn btn--light field--full">Отправить</button>
+          <p class="form__success field--full" role="status" hidden>Спасибо! Сообщение отправлено — напишу вам в течение дня.<br><small>Это демо: данные никуда не отправляются.</small></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Илья Морозов, фотосъёмка</p>
+      <p>Демо-сайт, компания вымышленная.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" aria-label="Закрыть">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Предыдущее фото">‹</button>
+    <figure class="lightbox__figure">
+      <div class="lightbox__img"></div>
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Следующее фото">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
